@@ -1,40 +1,79 @@
-header{
-    background-color: cornflowerblue;
-    color: rgb(100, 206, 166);
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-}
-
-body{
-    background-color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 20px;
-}
-
-header img{
-    width: 80px;
-    height: auto;
-}
-
-nev{
-    margin-top: 15px;
-}
-nav a{
-    text-decoration: none;
-    color: black;
-    margin: 15px;
-    font-weight: bold;
-}
-nav ul{
-    list-style: none;
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
     margin: 0;
 }
-nav li{
-    display: inline;
+
+/* Navigation Styles */
+nav {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
 }
-nav a:hover
-{
-    color: bisque;
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+main {
+    padding: 1rem;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+article {
+    background-color: white;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+aside {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
