@@ -134,3 +134,12 @@ footer {
         font-size: 1.2rem;
     }
 }
+#notification{
+    background-color: rgb(61, 174, 118);
+    color: #9c2121;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
