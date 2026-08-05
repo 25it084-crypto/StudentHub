@@ -143,3 +143,10 @@ footer {
     border-radius: 8px;
     margin-bottom: 20px;
 }
+#closeBtn{
+    background-color: rgb(216, 121, 121);
+    color: white;
+    padding: 5px 10px;
+    border : none;
+    cursor: pointer;
+}
