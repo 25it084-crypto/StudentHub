@@ -1,0 +1,17 @@
+[
+  { "id": 1, "category": "Registration", "question": "How do I register for an event on StudentHub?", "answer": "Browse the Events page, choose your desired event, and click the Register button to reserve your seat." },
+  { "id": 2, "category": "General", "question": "Is StudentHub free for all college students?", "answer": "Yes, all university students can register, view notices, and join campus activities completely free of charge." },
+  { "id": 3, "category": "Account", "question": "Can I use my personal Gmail to register?", "answer": "We recommend using your official college email ID (@charusat.edu.in) to receive verification credits and official notices." },
+  { "id": 4, "category": "Events", "question": "What happens if an event runs out of seats?", "answer": "Once seat capacity is reached, you will be placed on an automated waitlist and notified if a slot opens." },
+  { "id": 5, "category": "Theme", "question": "How do I activate Dark Mode?", "answer": "Click the Dark Mode button in the header bar. Your preference is automatically stored in browser localStorage." },
+  { "id": 6, "category": "Certificates", "question": "How will I receive my participation certificate?", "answer": "Certificates are emailed within 48 hours following attendance verification by the event coordinator." },
+  { "id": 7, "category": "Registration", "question": "Can I cancel my event registration?", "answer": "Yes, visit your Student Dashboard before the registration closing deadline to cancel or modify your seat." },
+  { "id": 8, "category": "Technical", "question": "Do workshops provide software prerequisites?", "answer": "Yes, workshop setup guides and required software links are emailed to participants 2 days prior to the event." },
+  { "id": 9, "category": "Sports", "question": "How are sports tournament team fixtures decided?", "answer": "The Sports Council conducts a live draw 24 hours prior to the tournament start date." },
+  { "id": 10, "category": "Account", "question": "How can I update my profile details?", "answer": "Navigate to the Profile page from the top navigation menu to edit your phone number, year, and course details." },
+  { "id": 11, "category": "Hackathon", "question": "Can teams have members from different branches?", "answer": "Yes, cross-departmental teams are encouraged in all campus hackathons." },
+  { "id": 12, "category": "General", "question": "Where is the physical Student Hub office located?", "answer": "Our coordinator desk is located in Room 204, Administrative Building, open 9:00 AM to 4:30 PM." },
+  { "id": 13, "category": "Technical", "question": "Is the website responsive on mobile phones?", "answer": "Yes, StudentHub is fully optimized for mobile devices with an interactive hamburger navigation menu." },
+  { "id": 14, "category": "Feedback", "question": "How do I report bugs or suggest new features?", "answer": "Go to the Feedback page or send an email directly to support@charusat.edu.in." },
+  { "id": 15, "category": "Events", "question": "Who organizes cultural fest competitions?", "answer": "The Student Cultural Committee in coordination with faculty mentors organizes all Spandan events." }
+]

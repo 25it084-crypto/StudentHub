@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub - Events</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Campus Events Portal</h1>
+        <p>Practical 6: Fetch API, Search, Filter, Sort & Pagination</p>
+    </header>
+
+    <!-- Top Bar Controls -->
+    <div class="top-controls">
+        <button id="theameBtn">🌙 Dark Mode</button>
+    </div>
+
+    <!-- Mobile Hamburger Menu Button -->
+    <button id="hamburgerBtn" class="hamburger-btn">☰ Menu</button>
+
+    <!-- Navigation Menu -->
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="evants.html">Events</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+    </nav>
+
+    <main class="events-main">
+        <section class="events-section">
+            <h2>Explore Campus Events</h2>
+            <p class="section-subtitle">Real-time data fetched from external JSON with dynamic filters and pagination.</p>
+
+            <!-- Search, Filter & Sort Controls Box -->
+            <div class="controls-card">
+                <!-- Search Input -->
+                <div class="control-item search-control">
+                    <label for="searchInput">🔍 Search Events:</label>
+                    <input type="text" id="searchInput" placeholder="Search by event title, keyword or venue...">
+                </div>
+
+                <!-- Category Filter -->
+                <div class="control-item">
+                    <label for="categoryFilter">🏷️ Filter by Category:</label>
+                    <select id="categoryFilter">
+                        <option value="all">All Categories</option>
+                        <option value="Technical">Technical</option>
+                        <option value="Workshop">Workshop</option>
+                        <option value="Seminar">Seminar</option>
+                        <option value="Sports">Sports</option>
+                        <option value="Cultural">Cultural</option>
+                    </select>
+                </div>
+
+                <!-- Sort By -->
+                <div class="control-item">
+                    <label for="sortSelect">⚡ Sort By:</label>
+                    <select id="sortSelect">
+                        <option value="date-asc">Date (Soonest First)</option>
+                        <option value="date-desc">Date (Latest First)</option>
+                        <option value="name-asc">Title (A - Z)</option>
+                        <option value="name-desc">Title (Z - A)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Intermediate Extension: Dependent Dropdown (Location / Department Filter) -->
+            <div class="dependent-dropdown-card">
+                <h3>📍 Dependent Filter (Intermediate Extension)</h3>
+                <div class="dependent-controls">
+                    <div class="control-item">
+                        <label for="stateSelect">Select State:</label>
+                        <select id="stateSelect">
+                            <option value="">-- Choose State --</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                        </select>
+                    </div>
+
+                    <div class="control-item">
+                        <label for="citySelect">Select City:</label>
+                        <select id="citySelect" disabled>
+                            <option value="">-- Select a State first --</option>
+                        </select>
+                    </div>
+
+                    <div class="control-item selected-location-box">
+                        <span id="selectedLocationText">Location: All Locations</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Status Banner (Cache indicator & results count) -->
+            <div class="status-bar">
+                <span id="resultsCount">Loading events...</span>
+                <span id="cacheBadge" class="cache-badge" style="display: none;">⚡ Loaded from Offline Cache</span>
+            </div>
+
+            <!-- Loading Indicator -->
+            <div id="loadingIndicator" class="loading-state">
+                <p>⏳ Fetching events from <code>../data/events.json</code>...</p>
+            </div>
+
+            <!-- Error State Message -->
+            <div id="errorMessage" class="error-state" style="display: none;">
+                <p>⚠️ Unable to load events. Please check your network connection.</p>
+                <button id="retryBtn" class="primary-btn">Retry Fetch</button>
+            </div>
+
+            <!-- Dynamic Events Grid Container -->
+            <div id="eventsContainer" class="events-grid">
+                <!-- Rendered dynamically via JavaScript Fetch API -->
+            </div>
+
+            <!-- Pagination Controls -->
+            <div class="pagination-wrapper">
+                <button id="prevPageBtn" class="page-btn">❮ Previous</button>
+                <div id="pageNumbersContainer" class="page-numbers">
+                    <!-- Page number buttons generated via JS -->
+                </div>
+                <button id="nextPageBtn" class="page-btn">Next ❯</button>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 StudentHub. All Rights are Reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/script.js"></script>
+    <script src="../js/events.js"></script>
+</body>
+</html>

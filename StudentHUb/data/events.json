@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "title": "Full Stack Web Development Workshop",
+    "category": "Workshop",
+    "date": "2026-10-15",
+    "venue": "Lab 301, IT Building",
+    "seats": 45,
+    "description": "Hands-on bootcamp on modern HTML5, CSS3, JavaScript ES6+, and REST APIs.",
+    "organizer": "IT Department"
+  },
+  {
+    "id": 2,
+    "title": "Charusat Annual Hackathon 2026",
+    "category": "Technical",
+    "date": "2026-10-22",
+    "venue": "Central Auditorium",
+    "seats": 120,
+    "description": "24-hour non-stop coding hackathon with industry mentors and grand cash prizes.",
+    "organizer": "CSI Student Chapter"
+  },
+  {
+    "id": 3,
+    "title": "AI & Machine Learning Symposium",
+    "category": "Seminar",
+    "date": "2026-10-28",
+    "venue": "Seminar Hall 1",
+    "seats": 80,
+    "description": "Expert talks on Large Language Models, generative AI, and computer vision trends.",
+    "organizer": "AI & Data Science Club"
+  },
+  {
+    "id": 4,
+    "title": "Inter-College Cricket Tournament",
+    "category": "Sports",
+    "date": "2026-11-02",
+    "venue": "University Sports Ground",
+    "seats": 16,
+    "description": "Annual cricket championship featuring top 16 college department teams.",
+    "organizer": "Sports Council"
+  },
+  {
+    "id": 5,
+    "title": "Spandan Cultural Night & Dance Fest",
+    "category": "Cultural",
+    "date": "2026-11-05",
+    "venue": "Open Air Amphitheatre",
+    "seats": 300,
+    "description": "Campus music concert, classical and western group dance battles, and drama plays.",
+    "organizer": "Cultural Committee"
+  },
+  {
+    "id": 6,
+    "title": "Cloud Computing with AWS & Docker",
+    "category": "Workshop",
+    "date": "2026-11-10",
+    "venue": "Computer Center 2",
+    "seats": 50,
+    "description": "Deploy scalable containerized applications using AWS EC2, S3, and Docker containers.",
+    "organizer": "Cloud Computing Cell"
+  },
+  {
+    "id": 7,
+    "title": "Cybersecurity & Ethical Hacking Meetup",
+    "category": "Technical",
+    "date": "2026-11-14",
+    "venue": "Lab 104, CE Dept",
+    "seats": 40,
+    "description": "Live demonstrations of network penetration testing, SQL injection, and web security.",
+    "organizer": "Cyber Cell"
+  },
+  {
+    "id": 8,
+    "title": "Campus Badminton League",
+    "category": "Sports",
+    "date": "2026-11-18",
+    "venue": "Indoor Sports Complex",
+    "seats": 32,
+    "description": "Singles and doubles badminton matches for boys and girls with trophies.",
+    "organizer": "Sports Council"
+  },
+  {
+    "id": 9,
+    "title": "UI/UX Design Masterclass with Figma",
+    "category": "Workshop",
+    "date": "2026-11-21",
+    "venue": "Design Studio 202",
+    "seats": 35,
+    "description": "Learn wireframing, interactive prototyping, and design systems for web and mobile apps.",
+    "organizer": "Design Club"
+  },
+  {
+    "id": 10,
+    "title": "Start-up Pitch & Entrepreneurship Summit",
+    "category": "Seminar",
+    "date": "2026-11-25",
+    "venue": "MBA Conference Hall",
+    "seats": 90,
+    "description": "Student entrepreneurs present startup concepts to angel investors and industry founders.",
+    "organizer": "E-Cell"
+  },
+  {
+    "id": 11,
+    "title": "Robotics & IoT Line Follower Challenge",
+    "category": "Technical",
+    "date": "2026-11-29",
+    "venue": "Mechanical Workshop Area",
+    "seats": 25,
+    "description": "Build autonomous sensor-based Arduino obstacle-avoiding and line-follower robots.",
+    "organizer": "Robotics Club"
+  },
+  {
+    "id": 12,
+    "title": "Diwali Art & Photography Exhibition",
+    "category": "Cultural",
+    "date": "2026-12-02",
+    "venue": "Campus Art Gallery",
+    "seats": 150,
+    "description": "Showcasing student paintings, digital art, calligraphy, and campus photography.",
+    "organizer": "Fine Arts Club"
+  },
+  {
+    "id": 13,
+    "title": "Data Structures & Competitive Programming",
+    "category": "Technical",
+    "date": "2026-12-06",
+    "venue": "Lab 205, CSE Dept",
+    "seats": 60,
+    "description": "Problem-solving sessions on dynamic programming, graphs, and LeetCode contest strategies.",
+    "organizer": "Coding Club"
+  },
+  {
+    "id": 14,
+    "title": "Annual Table Tennis Championship",
+    "category": "Sports",
+    "date": "2026-12-10",
+    "venue": "Student Activity Center",
+    "seats": 24,
+    "description": "Inter-departmental fast-paced knock-out table tennis tournament.",
+    "organizer": "Sports Council"
+  },
+  {
+    "id": 15,
+    "title": "Resume Building & Tech Interview Prep",
+    "category": "Seminar",
+    "date": "2026-12-14",
+    "venue": "Auditorium Annex",
+    "seats": 110,
+    "description": "HR and alumni talk on cracking placement interviews, ATS resumes, and mock interviews.",
+    "organizer": "Placement Cell"
+  }
+]

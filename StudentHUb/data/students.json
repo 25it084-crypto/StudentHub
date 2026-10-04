@@ -1,0 +1,17 @@
+[
+  { "id": 101, "name": "Aarav Patel", "course": "IT", "year": "3rd", "email": "aarav.it@charusat.edu.in", "city": "Ahmedabad", "gpa": 8.7 },
+  { "id": 102, "name": "Bhavya Shah", "course": "CE", "year": "4th", "email": "bhavya.ce@charusat.edu.in", "city": "Vadodara", "gpa": 9.1 },
+  { "id": 103, "name": "Chirag Joshi", "course": "CSE", "year": "2nd", "email": "chirag.cse@charusat.edu.in", "city": "Surat", "gpa": 8.2 },
+  { "id": 104, "name": "Diya Mehta", "course": "IT", "year": "3rd", "email": "diya.it@charusat.edu.in", "city": "Anand", "gpa": 8.9 },
+  { "id": 105, "name": "Esha Trivedi", "course": "EC", "year": "1st", "email": "esha.ec@charusat.edu.in", "city": "Rajkot", "gpa": 7.9 },
+  { "id": 106, "name": "Harsh Parmar", "course": "MCA", "year": "2nd", "email": "harsh.mca@charusat.edu.in", "city": "Nadiad", "gpa": 8.5 },
+  { "id": 107, "name": "Ishaan Sharma", "course": "IT", "year": "4th", "email": "ishaan.it@charusat.edu.in", "city": "Gandhinagar", "gpa": 9.4 },
+  { "id": 108, "name": "Janvi Prajapati", "course": "CE", "year": "3rd", "email": "janvi.ce@charusat.edu.in", "city": "Ahmedabad", "gpa": 8.6 },
+  { "id": 109, "name": "Karan Vaghela", "course": "CSE", "year": "2nd", "email": "karan.cse@charusat.edu.in", "city": "Bhavnagar", "gpa": 8.1 },
+  { "id": 110, "name": "Manan Desai", "course": "IT", "year": "1st", "email": "manan.it@charusat.edu.in", "city": "Surat", "gpa": 7.8 },
+  { "id": 111, "name": "Nidhi Dave", "course": "CE", "year": "3rd", "email": "nidhi.ce@charusat.edu.in", "city": "Vadodara", "gpa": 9.0 },
+  { "id": 112, "name": "Pranav Bhatt", "course": "MCA", "year": "1st", "email": "pranav.mca@charusat.edu.in", "city": "Anand", "gpa": 8.3 },
+  { "id": 113, "name": "Riya Soni", "course": "IT", "year": "2nd", "email": "riya.it@charusat.edu.in", "city": "Ahmedabad", "gpa": 8.8 },
+  { "id": 114, "name": "Siddharth Rana", "course": "CSE", "year": "4th", "email": "siddharth.cse@charusat.edu.in", "city": "Rajkot", "gpa": 9.2 },
+  { "id": 115, "name": "Tanvi Solanki", "course": "EC", "year": "3rd", "email": "tanvi.ec@charusat.edu.in", "city": "Vadodara", "gpa": 8.4 }
+]
