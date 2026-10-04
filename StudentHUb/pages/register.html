@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub - Register</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>StudentHub Portal</h1>
+        <p>Student Registration - Practical 5</p>
+    </header>
+
+    <!-- Top Controls -->
+    <div class="top-controls">
+        <button id="theameBtn">🌙 Dark Mode</button>
+    </div>
+
+    <!-- Mobile Hamburger Menu Button -->
+    <button id="hamburgerBtn" class="hamburger-btn">☰ Menu</button>
+
+    <!-- Navigation -->
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="evants.html">Events</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+    </nav>
+
+    <main class="form-main">
+        <section class="form-container">
+            <h2>Student Registration Form</h2>
+            <p class="form-subtitle">Fill in all the required details to create your student account.</p>
+
+            <!-- Success Notification Alert -->
+            <div id="formSuccessAlert" class="alert-success" style="display: none;">
+                ✅ Registration Successful! Your account has been created.
+            </div>
+
+            <!-- Registration Form (novalidate disables browser default bubbles so JS validation works) -->
+            <form id="registrationForm" novalidate>
+                
+                <!-- 1. Full Name -->
+                <div class="form-group">
+                    <label for="fullName">Full Name <span class="required">*</span></label>
+                    <input type="text" id="fullName" name="fullName" placeholder="e.g. Rahul Sharma" autocomplete="name">
+                    <span class="error-msg" id="nameError"></span>
+                </div>
+
+                <!-- 2. Email Address -->
+                <div class="form-group">
+                    <label for="email">College / Personal Email <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="e.g. student@charusat.edu.in" autocomplete="email">
+                    <span class="error-msg" id="emailError"></span>
+                </div>
+
+                <!-- 3. Mobile Number -->
+                <div class="form-group">
+                    <label for="mobile">Mobile Number (10 Digits) <span class="required">*</span></label>
+                    <input type="tel" id="mobile" name="mobile" placeholder="e.g. 9876543210" maxlength="10">
+                    <span class="error-msg" id="mobileError"></span>
+                </div>
+
+                <!-- 4. Password & Password Strength Meter -->
+                <div class="form-group">
+                    <label for="password">Password <span class="required">*</span></label>
+                    <input type="password" id="password" name="password" placeholder="Min 8 chars: A-Z, a-z, 0-9, @#$">
+                    
+                    <!-- Password Strength Meter -->
+                    <div class="strength-meter-container">
+                        <div id="strengthBar" class="strength-bar"></div>
+                    </div>
+                    <span id="strengthText" class="strength-text">Password Strength: None</span>
+                    <span class="error-msg" id="passwordError"></span>
+                </div>
+
+                <!-- 5. Confirm Password -->
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password <span class="required">*</span></label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter password">
+                    <span class="error-msg" id="confirmPasswordError"></span>
+                </div>
+
+                <!-- 6. Course Selection -->
+                <div class="form-group">
+                    <label for="courseSelect">Course / Department <span class="required">*</span></label>
+                    <select id="courseSelect" name="course">
+                        <option value="">-- Select Your Course --</option>
+                        <option value="IT">B.Tech Information Technology (IT)</option>
+                        <option value="CE">B.Tech Computer Engineering (CE)</option>
+                        <option value="CSE">B.Tech Computer Science & Eng. (CSE)</option>
+                        <option value="EC">B.Tech Electronics & Comm. (EC)</option>
+                        <option value="MCA">Master of Computer Applications (MCA)</option>
+                    </select>
+                    <span class="error-msg" id="courseError"></span>
+                </div>
+
+                <!-- 7. Year of Study -->
+                <div class="form-group">
+                    <label for="yearSelect">Year of Study <span class="required">*</span></label>
+                    <select id="yearSelect" name="year">
+                        <option value="">-- Select Year --</option>
+                        <option value="1">1st Year (Semester 1 & 2)</option>
+                        <option value="2">2nd Year (Semester 3 & 4)</option>
+                        <option value="3">3rd Year (Semester 5 & 6)</option>
+                        <option value="4">4th Year (Semester 7 & 8)</option>
+                    </select>
+                    <span class="error-msg" id="yearError"></span>
+                </div>
+
+                <!-- 8. Gender -->
+                <div class="form-group">
+                    <label>Gender <span class="required">*</span></label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="Male"> Male
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="Female"> Female
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="Other"> Other
+                        </label>
+                    </div>
+                    <span class="error-msg" id="genderError"></span>
+                </div>
+
+                <!-- 9. Advanced Extension: Custom Canvas CAPTCHA -->
+                <div class="form-group">
+                    <label for="captchaInput">Security Verification (CAPTCHA) <span class="required">*</span></label>
+                    <div class="captcha-wrapper">
+                        <canvas id="captchaCanvas" width="130" height="40" title="Security CAPTCHA"></canvas>
+                        <button type="button" id="refreshCaptchaBtn" class="refresh-captcha-btn" title="Refresh CAPTCHA">🔄</button>
+                    </div>
+                    <input type="text" id="captchaInput" placeholder="Enter CAPTCHA characters" maxlength="6">
+                    <span class="error-msg" id="captchaError"></span>
+                </div>
+
+                <!-- 10. Terms Acceptance -->
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="termsCheckbox" name="terms">
+                        I agree to the <a href="#" onclick="alert('StudentHub Terms: Respect campus rules and academic integrity.'); return false;">Terms and Conditions</a> <span class="required">*</span>
+                    </label>
+                    <span class="error-msg" id="termsError"></span>
+                </div>
+
+                <!-- Form Action Buttons -->
+                <div class="form-buttons">
+                    <button type="submit" class="submit-btn">Register Account</button>
+                    <button type="reset" id="resetBtn" class="reset-btn">Clear Form</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 StudentHub. All Rights are Reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/script.js"></script>
+    <script src="../js/register.js"></script>
+</body>
+</html>

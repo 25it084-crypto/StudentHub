@@ -13,35 +13,108 @@
         <p>Your Digital Campus Event Hub</p>
         
     </header>
-      <div id="notification">
-                <span>
-                    📢Workshop Registration is Open!
-                </span>
-                <button id="closeBtn">❌</button>
-            </div>
-    <nav>
-        
+    <!-- Top Bar Controls -->
+    <div class="top-controls">
+        <button id="theameBtn">🌙 Dark Mode</button>
+    </div>
+
+    <!-- 1. Notification Banner -->
+    <div id="notification">
+        <span>📢 Workshop Registration is Open! Check out the events below.</span>
+        <button id="closeBtn">❌</button>
+    </div>
+
+    <!-- Mobile Hamburger Menu Button -->
+    <button id="hamburgerBtn" class="hamburger-btn">☰ Menu</button>
+
+    <!-- 2. Navigation Menu -->
+    <nav id="navMenu">
         <a href="index.html">Home</a>
         <a href="evants.html">Events</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
         <a href="login.html">Login</a>
         <a href="register.html">Register</a>
     </nav>
+
     <main>
-        
         <section>
             <h2>About StudentHub</h2>
             <p>
                 StudentHub is a digital platform where students can discover and register for events, manage their profiles, and access an academic calendar.
             </p>
+
+            <!-- 3. Content / Event Slider -->
+            <div class="slider-box">
+                <h3>Campus Highlights Slider</h3>
+                <div class="slider-container">
+                    <div class="slide active">
+                        <h4>💻 Web Development Bootcamp</h4>
+                        <p>Learn HTML, CSS, JavaScript, and build live projects this weekend!</p>
+                    </div>
+                    <div class="slide">
+                        <h4>🚀 Annual Hackathon 2026</h4>
+                        <p>24 hours of coding, brainstorming, and winning exciting cash prizes!</p>
+                    </div>
+                    <div class="slide">
+                        <h4>🎨 Cultural & Tech Fest</h4>
+                        <p>Join us for music, robotics, gaming competitions, and campus fun.</p>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button id="prevBtn" class="slider-btn">❮ Prev</button>
+                    <span id="slideIndicator">Slide 1 of 3</span>
+                    <button id="nextBtn" class="slider-btn">Next ❯</button>
+                </div>
+            </div>
+
+            <!-- 4. Collapsible FAQ Section -->
+            <div class="faq-box">
+                <h3>Frequently Asked Questions (FAQ)</h3>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How do I register for an event?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Click on the "Register" button on any event card or use the quick popup modal below to submit your details.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is StudentHub free for all students?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, StudentHub is completely free for all enrolled university students to join clubs and attend events.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How do I switch between Light and Dark mode?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Click the "Dark Mode" button in the top right corner. Your preference is automatically saved!</p>
+                    </div>
+                </div>
+            </div>
         </section>
+
         <article>
             <h3>Upcoming Workshop</h3>
             <p>
-                A Web Development Workshop will be conducted next week. Stay tuned for more details!
+                A Web Development Workshop will be conducted next week. Registration is limited to 50 seats.
             </p>
+            <br>
+            <!-- 5. Modal Trigger Button -->
+            <button id="openModalBtn" class="primary-btn">Quick Register (Modal)</button>
         </article>
+
         <aside>
             <h3>Latest Notices</h3>
             <ul>
@@ -51,6 +124,25 @@
             </ul>
         </aside>
     </main>
+
+    <!-- 6. Modal Popup Component -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModalBtn" class="close-modal">&times;</span>
+            <h3>Event Quick Registration</h3>
+            <p>Fill out the basic details below to reserve your seat:</p>
+            <form id="modalForm" onsubmit="event.preventDefault(); alert('Registration submitted successfully!'); document.getElementById('registerModal').style.display='none';">
+                <label for="studentNameInput">Your Name:</label>
+                <input type="text" id="studentNameInput" placeholder="Enter your full name" required>
+
+                <label for="studentEmailInput">Your College Email:</label>
+                <input type="email" id="studentEmailInput" placeholder="id@charusat.edu.in" required>
+
+                <button type="submit" class="submit-btn">Submit Registration</button>
+            </form>
+        </div>
+    </div>
+
     <footer>
         <p>&copy; 2026 StudentHub. All Rights are Reserved.</p>
     </footer>
