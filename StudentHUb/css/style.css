@@ -886,4 +886,133 @@ body.dark-mode .event-date {
     color: #b0b3b8;
 }
 
+/* ==========================================================================
+   10. Practical 7: PHP Form Processing & CSV Records Table Styling
+   ========================================================================== */
+.contact-page-wrapper {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.form-group textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    resize: vertical;
+    outline: none;
+}
+.form-group textarea:focus {
+    border-color: #0d6efd;
+}
+
+/* Server-Side Alert Boxes */
+.alert-error {
+    background-color: #f8d7da;
+    color: #842029;
+    border: 1px solid #f5c2c7;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+.alert-error ul {
+    margin-left: 20px;
+    margin-top: 6px;
+}
+.alert-error li {
+    font-size: 0.92rem;
+    margin-bottom: 3px;
+}
+.info-banner {
+    background: #e7f1ff;
+    color: #084298;
+    border: 1px solid #b6d4fe;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 0.88rem;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+/* Intermediate Extension: Stored CSV Records Table */
+.records-section {
+    margin-top: 35px;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.records-section h3 {
+    color: #0d6efd;
+    margin-bottom: 6px;
+}
+.records-section p {
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 0.92rem;
+}
+.table-responsive {
+    overflow-x: auto;
+}
+.records-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    text-align: left;
+}
+.records-table th,
+.records-table td {
+    padding: 10px 12px;
+    border: 1px solid #dee2e6;
+}
+.records-table th {
+    background: #0d6efd;
+    color: white;
+    font-weight: 600;
+}
+.records-table tbody tr:nth-child(even) {
+    background: #f8f9fa;
+}
+.records-table tbody tr:hover {
+    background: #eef3ff;
+}
+.table-tag {
+    background: #cfe2ff;
+    color: #084298;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Dark Mode for Practical 7 */
+body.dark-mode .records-section {
+    background: #242526;
+    color: #e4e6eb;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+body.dark-mode .form-group textarea {
+    background: #3a3b3c;
+    color: #e4e6eb;
+    border-color: #555;
+}
+body.dark-mode .records-table th,
+body.dark-mode .records-table td {
+    border-color: #444;
+}
+body.dark-mode .records-table tbody tr:nth-child(even) {
+    background: #2b2b2b;
+}
+body.dark-mode .records-table tbody tr:hover {
+    background: #333;
+}
+body.dark-mode .info-banner {
+    background: #1c2738;
+    color: #6ea8fe;
+    border-color: #2b4369;
+}
+
+
 

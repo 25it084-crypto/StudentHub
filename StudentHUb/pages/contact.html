@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub - Contact Us</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>StudentHub Portal</h1>
+        <p>Get in Touch with Campus Coordinators</p>
+    </header>
+
+    <!-- Top Bar Controls -->
+    <div class="top-controls">
+        <button id="theameBtn">🌙 Dark Mode</button>
+    </div>
+
+    <!-- Mobile Hamburger Menu Button -->
+    <button id="hamburgerBtn" class="hamburger-btn">☰ Menu</button>
+
+    <!-- Navigation Menu -->
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="evants.html">Events</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+    </nav>
+
+    <main class="form-main">
+        <div class="contact-page-wrapper">
+
+            <section class="form-container">
+                <h2>Contact & Inquiry Form</h2>
+                <p class="form-subtitle">Practical 7: Form submitted via POST to PHP backend processor.</p>
+
+                <!-- Helpful PHP notice banner for local XAMPP testing -->
+                <div class="info-banner">
+                    💡 <strong>Tip for Evaluation:</strong> To run the live PHP file writing and server-side validation, open via XAMPP localhost at:
+                    <br><code>http://localhost/Studenthub-main/StudentHUb/php/contact.php</code>
+                </div>
+
+                <!-- Form submits to PHP backend -->
+                <form method="POST" action="../php/contact.php">
+
+                    <!-- 1. Full Name -->
+                    <div class="form-group">
+                        <label for="name">Full Name <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+
+                    <!-- 2. Email Address -->
+                    <div class="form-group">
+                        <label for="email">Email Address <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="name@charusat.edu.in" required>
+                    </div>
+
+                    <!-- 3. Mobile Number -->
+                    <div class="form-group">
+                        <label for="mobile">Mobile Number (10 Digits) <span class="required">*</span></label>
+                        <input type="tel" id="mobile" name="mobile" placeholder="e.g. 9876543210" maxlength="10" required>
+                    </div>
+
+                    <!-- 4. Subject Dropdown -->
+                    <div class="form-group">
+                        <label for="subject">Subject / Inquiry Type <span class="required">*</span></label>
+                        <select id="subject" name="subject" required>
+                            <option value="">-- Choose Subject --</option>
+                            <option value="Event Inquiry">Event Inquiry</option>
+                            <option value="Workshop Registration">Workshop Registration</option>
+                            <option value="Technical Support">Technical Support</option>
+                            <option value="General Feedback">General Feedback</option>
+                        </select>
+                    </div>
+
+                    <!-- 5. Message -->
+                    <div class="form-group">
+                        <label for="message">Your Message / Query <span class="required">*</span></label>
+                        <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="form-buttons">
+                        <button type="submit" class="submit-btn">Submit via POST to PHP</button>
+                        <button type="reset" class="reset-btn">Clear</button>
+                    </div>
+                </form>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 StudentHub. All Rights are Reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/script.js"></script>
+</body>
+</html>

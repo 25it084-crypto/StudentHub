@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Rahul Sharma",
+    "email": "rahul@charusat.edu.in",
+    "mobile": "9876543210",
+    "subject": "Event Query",
+    "message": "How do I register for the Hackathon?",
+    "submitted_at": "2026-10-04 10:30:00"
+  },
+  {
+    "name": "Priya Patel",
+    "email": "priya@charusat.edu.in",
+    "mobile": "9898989898",
+    "subject": "Workshop Timing",
+    "message": "Is the Web Dev workshop online or in lab?",
+    "submitted_at": "2026-10-04 11:15:00"
+  }
+]
