@@ -240,12 +240,16 @@ if (form) {
                 formSuccessAlert.style.display = "block";
                 formSuccessAlert.scrollIntoView({ behavior: "smooth" });
             }
-            alert("Registration Successful!");
-            form.reset();
-            generateCaptcha();
-            document.querySelectorAll(".input-success").forEach(function(el) {
-                el.classList.remove("input-success");
-            });
+            if (window.location.protocol === 'http:' || window.location.protocol === 'https:') {
+                form.submit();
+            } else {
+                alert("Frontend Validation Passed!\nTo test MySQL insert, duplicate checks, and password hashing, run via XAMPP localhost at: http://localhost/Studenthub-main/StudentHUb/php/register.php");
+                form.reset();
+                generateCaptcha();
+                document.querySelectorAll(".input-success").forEach(function(el) {
+                    el.classList.remove("input-success");
+                });
+            }
         } else {
             if (formSuccessAlert) formSuccessAlert.style.display = "none";
             let firstErr = document.querySelector(".input-error");

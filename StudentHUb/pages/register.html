@@ -43,8 +43,8 @@
                 ✅ Registration Successful! Your account has been created.
             </div>
 
-            <!-- Registration Form (novalidate disables browser default bubbles so JS validation works) -->
-            <form id="registrationForm" novalidate>
+            <!-- Registration Form (Submits to PHP MySQLi backend via POST) -->
+            <form id="registrationForm" method="POST" action="../php/register.php" novalidate>
                 
                 <!-- 1. Full Name -->
                 <div class="form-group">
